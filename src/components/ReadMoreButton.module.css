@@ -1,9 +1,8 @@
 .readmorebtn {
     border: 0;
-    color: white;
-    background-color: goldenrod;
+    background-color: lightgray;
     padding: .5rem 1rem;
-    margin: 1rem;
+    margin: 0 0 1rem 1rem;
     cursor: pointer;
     border-radius: 5px;
 }

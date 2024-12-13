@@ -2,19 +2,18 @@
 import style from "./PostCard.module.css"
 import ReadMoreButton from "./ReadMoreButton";
 
-function PostCard() {
+function PostCard({ title, image, content, tags, published }) {
     return (
         <div className={style.card}>
             {/* Card Image */}
             <div className={style.image}>
-                <img src="../images/600x400.jpg" alt="" />
+                <img src={image} alt="" />
             </div>
             {/* Card Body */}
             <div className={style.content}>
-                <h3>Titolo del Post</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia qui laudantium beatae, dolorum velit error expedita, quisquam illum officia, saepe ut cum ex alias autem eius animi omnis? Tenetur, nam?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, culpa? Rem ratione perspiciatis explicabo doloribus consectetur iure at? Aliquid veniam doloribus accusantium quos cumque at ullam.
-                </p>
+                <h3>{title}</h3>
+                <p>{content}</p>
+                <span>{tags}</span>
                 <ReadMoreButton />
             </div>
         </div>

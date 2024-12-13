@@ -1,11 +1,16 @@
-// Import 
+// Import
 import style from "./Main.module.css"
 import PostCard from "./PostCard";
 import posts from "../data/posts";
 
 // Functions
 function printPosts() {
-    return posts.map((curPost) => (
+    // Filtra i post pubblicati 
+    const publishedPosts = posts.filter((curPost) => curPost.published)
+    // console.log(publishedPosts);
+
+    // Mappa solo i post filtrati
+    return publishedPosts.map((curPost) => (
         <div className="col" key={curPost.id}>
             <PostCard
                 title={curPost.title}

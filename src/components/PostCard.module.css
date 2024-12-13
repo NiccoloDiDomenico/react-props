@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.content h3, .content p{
+    margin: 1rem;
+}
+
+
+

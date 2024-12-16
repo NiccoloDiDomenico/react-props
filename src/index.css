@@ -37,3 +37,19 @@ img {
   padding-top: 3rem;
 }
 
+/* TAGS */
+.html {
+  background-color: lightsalmon;
+}
+
+.css {
+  background-color: lightblue;
+}
+
+.js {
+  background-color: limegreen;
+}
+
+.php {
+  background-color: lightcoral;
+} 

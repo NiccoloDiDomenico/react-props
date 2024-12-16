@@ -7,10 +7,15 @@
     overflow: hidden;
 }
 
-.content h3, .content p, .content span {
+.content h3,
+.content p {
     margin: 1rem;
 }
 
 .content span {
-    display: block;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 1rem 1rem;
 }
+
+

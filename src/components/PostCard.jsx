@@ -2,8 +2,13 @@
 import style from "./PostCard.module.css"
 import ReadMoreButton from "./ReadMoreButton";
 
-function PostCard({ title, image, content, tags, published }) {
+// function getColorTag(post) {
+
+// }
+
+function PostCard({ title, image, content, tags }) {
     return (
+        
         <div className={style.card}>
             {/* Card Image */}
             <div className={style.image}>
@@ -13,7 +18,11 @@ function PostCard({ title, image, content, tags, published }) {
             <div className={style.content}>
                 <h3>{title}</h3>
                 <p>{content}</p>
-                <span>{tags}</span>
+                <div>
+                    {tags.map((curTag, index) => (
+                        <span key={index} className={curTag}>{curTag}</span>
+                    ))}
+                </div>
                 <ReadMoreButton />
             </div>
         </div>
